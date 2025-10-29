@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="40" viewBox="0 0 160 40" role="img" aria-label="CreateWeb logo">
+  <rect x="0" y="6" width="28" height="28" rx="6" fill="#facc15"/>
+  <path d="M9 20 L14 15 M9 20 L14 25" stroke="#0a0a0a" stroke-width="3" stroke-linecap="round"/>
+  <path d="M19 14 L15 26" stroke="#0a0a0a" stroke-width="3" stroke-linecap="round"/>
+  <text x="38" y="26" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="18" font-weight="700" fill="#ffffff">CreateWeb</text>
+</svg>
