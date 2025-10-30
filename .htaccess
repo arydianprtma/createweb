@@ -1,0 +1,22 @@
+# Mengaktifkan modul rewrite
+RewriteEngine On
+
+# Jika file atau direktori tidak ada, lanjutkan ke aturan berikutnya
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirect semua request ke index.php
+RewriteRule ^(.*)$ index.php [QSA,L]
+
+# Mencegah directory listing
+Options -Indexes
+
+# Mengatur default charset
+AddDefaultCharset UTF-8
+
+# Mengatur header keamanan
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set X-Frame-Options "SAMEORIGIN"
+</IfModule>
