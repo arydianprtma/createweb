@@ -43,11 +43,6 @@
             }
           ?>
           <div class="p-6 rounded-xl bg-white/5 border border-white/10 hover:border-brand-yellow transition">
-            <div class="w-12 h-12 bg-brand-yellow/20 rounded-lg flex items-center justify-center mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-brand-yellow" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" focusable="false">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6l-2 4H6l4 2-2 4 4-2 4 2-2-4 4-2h-4l-2-4z" />
-              </svg>
-            </div>
             <h3 class="text-xl font-semibold mb-2"><?= htmlspecialchars($svc['service_name'] ?? 'Layanan') ?></h3>
             <p class="text-white/70 mb-4"><?= htmlspecialchars($svc['description'] ?? '') ?></p>
             <?php if (!empty($features)): ?>

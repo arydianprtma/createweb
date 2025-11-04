@@ -22,6 +22,6 @@ class ServiceController extends Controller
             'services' => $serviceModel->getAllPrices()
         ];
 
-        $this->view('service/index', $data);
+        $this->view('/service/index', $data);
     }
 }
